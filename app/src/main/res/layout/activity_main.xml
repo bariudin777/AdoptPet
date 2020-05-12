@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="140dp"
+        android:src="@drawable/sun1" />
+
+    <TextView
+        android:id="@+id/app_slogan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="149dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="155dp"
+        android:gravity="center_horizontal"
+        android:text="Catch me if you can"
+        android:textAlignment="center"
+        android:textColor="@color/Black"
+        android:textSize="30dp"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/main_join_now_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/app_slogan"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="37dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="326dp"
+        android:background="@drawable/input_design"
+        android:padding="20dp"
+        android:text="                        Join Now                       "
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/main_login_btn"
+        android:layout_width="356dp"
+        android:layout_height="65dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="37dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="250dp"
+        android:background="@drawable/buttens"
+        android:padding="20dp"
+        android:text="Already Have an Account? Login       "
+        android:textAllCaps="false"
+        android:textSize="18sp"/>
+
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminAddNewProductActivity">
+
+    <ImageView
+        android:id="@+id/select_animal_img"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:cropToPadding="false"
+        android:scaleType="center"
+        android:src="@drawable/select_animal_img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        />
+    <EditText
+        android:id="@+id/animal_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/select_animal_img"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="20dp"
+        android:padding="20dp"
+        android:hint="Animal Name...."
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/input_design"
+
+
+        />
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/animal_name"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="6dp"
+        android:padding="20dp"
+        android:hint="Animal Description...."
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/input_design"
+        />
+
+    <Button
+        android:id="@+id/add_new_animal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/description"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/buttens"
+        android:padding="17dp"
+        android:text="Add Animal"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+
+        android:textSize="18sp"
+        android:layout_marginStart="150dp" />
+
+</RelativeLayout>
