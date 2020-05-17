@@ -85,13 +85,11 @@ public class HomeActivity extends AppCompatActivity {
         CircleImageView profile_img = header_view.findViewById(R.id.user_profile_image);
 
         user_name_text_view.setText(Prevalent.online_user.getName());
-
+        Picasso.get().load(Prevalent.online_user.getImage()).placeholder(R.drawable.profile).into(profile_img);
         recyclerView = findViewById(R.id.recycler_view);
         recyclerView.setHasFixedSize(true);
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
-
-
 
 
         navController.addOnDestinationChangedListener(new NavController.OnDestinationChangedListener() {
@@ -108,7 +106,7 @@ public class HomeActivity extends AppCompatActivity {
                 }
                 if (destination.getId() == R.id.nav_settings) {
                     Toast.makeText(HomeActivity.this, "Settings", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(HomeActivity.this,SettingsActivity.class);
+                    Intent intent = new Intent(HomeActivity.this, SettingsActivity.class);
                     startActivity(intent);
 
 
@@ -143,7 +141,7 @@ public class HomeActivity extends AppCompatActivity {
                     @NonNull
                     @Override
                     public AnimalViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-                        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.products_items_layout,parent,false);
+                        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.products_items_layout, parent, false);
                         AnimalViewHolder hol = new AnimalViewHolder(view);
                         return hol;
                     }
