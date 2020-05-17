@@ -130,7 +130,7 @@ public class SettingsActivity extends AppCompatActivity {
         map.put("phoneOrder", user_phone_edit_text.getText().toString());
         reference.child(Prevalent.online_user.getPhone()).updateChildren(map);
 
-        startActivity(new Intent(SettingsActivity.this, MainActivity.class));
+        startActivity(new Intent(SettingsActivity.this, HomeActivity.class));
         finish();
 
 
@@ -185,7 +185,7 @@ public class SettingsActivity extends AppCompatActivity {
                         reference.child(Prevalent.online_user.getPhone()).updateChildren(map);
 
                         progressDialog.dismiss();
-                        startActivity(new Intent(SettingsActivity.this, MainActivity.class));
+                        startActivity(new Intent(SettingsActivity.this, HomeActivity.class));
                         finish();
                     } else {
                         progressDialog.dismiss();
