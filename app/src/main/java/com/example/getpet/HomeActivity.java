@@ -132,10 +132,21 @@ public class HomeActivity extends AppCompatActivity {
         FirebaseRecyclerAdapter<Animals, AnimalViewHolder> adapter =
                 new FirebaseRecyclerAdapter<Animals, AnimalViewHolder>(options) {
                     @Override
-                    protected void onBindViewHolder(@NonNull AnimalViewHolder animalViewHolder, int i, @NonNull Animals animals) {
+                    protected void onBindViewHolder(@NonNull AnimalViewHolder animalViewHolder, int i, @NonNull final Animals animals) {
                         animalViewHolder.txt_animal_name.setText(animals.getAnimal_name());
                         animalViewHolder.txt_animal_info.setText(animals.getDescription());
                         Picasso.get().load(animals.getImage()).into(animalViewHolder.img_view);
+                        //for the addition of animal to our cart
+                        animalViewHolder.itemView.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                Intent intent = new Intent(HomeActivity.this, AnimalDetailsActivity.class);
+                                intent.putExtra("pid", animals.getAnimal_id());
+                                startActivity(intent);
+                            }
+                        });
+
+
                     }
 
                     @NonNull
