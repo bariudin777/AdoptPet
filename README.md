@@ -1,1 +1,1 @@
-# GetPet
+# Android Application - "GetApp"
