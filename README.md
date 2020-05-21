@@ -5,5 +5,5 @@ GetPet application is an animal adoption android application uses AndroidStudio 
 This uses Kaggle adoption data-set with 1000 animals images.
 The app is based on basic android method that use in ecommerce apps.
 
-Here's our Main Activity:
+# Here's our Main Activity:
 
