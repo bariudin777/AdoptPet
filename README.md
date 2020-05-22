@@ -9,17 +9,18 @@ The app is based on basic android method that use in ecommerce apps.
 
 ![main window](rsz_1main.jpg)
 
+### Here's image of our Register Activity:
 Very simple UI give the user a quick way to navigate through different components in the app without big technological knowledge.
 If it is your first time – then you nee to sign up with “Join now” button.
 It will lead you to the next window:
 
+
 ![main window](rsz_register.jpg)
 
-
+### Here's image of our Login Activity:
 If you have already an acocount you just need log in:
 
-
-
+![main window](rsz_login.jpg)
 
 
 ....here i will add the rest of pics....
