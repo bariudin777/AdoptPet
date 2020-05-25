@@ -22,5 +22,9 @@ If you have already an acocount you just need log in:
 
 ![main window](rsz_login.jpg)
 
+### And now i will show you the home page:
+
+![main window](rsz_home.jpg)
+
 
 ....here i will add the rest of pics....
