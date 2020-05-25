@@ -15,12 +15,12 @@ If it is your first time – then you nee to sign up with “Join now” button.
 It will lead you to the next window:
 
 
-![main window]()
+![main window](rsz_register.jpg)
 
 ### Here's image of our Login Activity:
 If you have already an acocount you just need log in:
 
-![main window]()
+![main window](rsz_login.jpg)
 
 
 ....here i will add the rest of pics....
