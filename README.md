@@ -30,5 +30,8 @@ You can scroll and choose your favorite pet...
 ### Here is the Nav Bar:
 ![main window](rsz_nav_bar.jpg)
 
+One of the options is to change your user settings and info- like change of your profile image, phone number, name at cetra.
+![main window](rsz_settings.jpg)
+
 
 ....here i will add the rest of pics....
