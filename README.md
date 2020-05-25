@@ -7,7 +7,7 @@ The app is based on basic android method that use in ecommerce apps.
 
 ### Here's image of our Main Activity:
 
-![main window](rsz_1main.jpg)
+![main window](rsz_main.jpg)
 
 ### Here's image of our Register Activity:
 Very simple UI give the user a quick way to navigate through different components in the app without big technological knowledge.
