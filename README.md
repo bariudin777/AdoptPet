@@ -23,8 +23,9 @@ If you have already an acocount you just need log in:
 ![main window](rsz_login.jpg)
 
 ### And now i will show you the home page:
+You can scroll and choose your favorite pet...
 
-![main window](rsz_home.jpg)
+![main window](rsz_1home.jpg)
 
 
 ....here i will add the rest of pics....
