@@ -27,5 +27,8 @@ You can scroll and choose your favorite pet...
 
 ![main window](rsz_1home.jpg)
 
+### Here is the Nav Bar:
+![main window](rsz_nav_bar.jpg)
+
 
 ....here i will add the rest of pics....
