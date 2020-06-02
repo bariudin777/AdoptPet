@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AnimalDetailsActivity">
+
+
+    <ImageView
+        android:id="@+id/animal_img_details"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:scaleType="centerCrop" />
+    <TextView
+        android:id="@+id/animal_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/animal_img_details"
+        android:text="Animal Name"
+        android:textColor="@color/Black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginTop="100dp"/>
+
+    <TextView
+        android:id="@+id/animal_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/animal_name"
+        android:text="Animal Info"
+        android:textColor="@color/Black"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"/>
+
+<!--
+    <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+        android:id="@+id/range_btn"
+        android:layout_width="175dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/animal_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="51dp"
+        android:elevation="6dp"
+        app:finalNumber="1"
+        app:initialNumber="0"
+        app:textSize="16sp">
+
+    </com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>
+-->
+    <Button
+        android:id="@+id/animal_add__to_cart_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:layout_margin="15dp"
+        android:layout_alignParentBottom="true"
+        android:text="Adopt"
+        android:textColor="@color/Black"
+        android:textSize="18sp"
+        />
+
+</RelativeLayout>
+

@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="colorPrimary">#BFA0</color>
+    <color name="colorPrimaryDark">#BFA0</color>
+    <color name="colorAccent">#BFA0</color>
+    <color name="Black">#F000</color>
+    <color name="White">#FFFF</color>
+</resources>
+
+<!--
     <color name="colorPrimary">#BF007A</color>
     <color name="colorPrimaryDark">#BF007A</color>
     <color name="colorAccent">#D81B60</color>
     <color name="Black">#F000</color>
-</resources>
+-->

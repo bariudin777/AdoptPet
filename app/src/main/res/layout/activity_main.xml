@@ -14,7 +14,7 @@
         android:layout_width="300dp"
         android:layout_height="100dp"
         android:layout_marginLeft="140dp"
-        android:layout_marginStart="30dp"
+        android:layout_marginStart="50dp"
         android:layout_marginTop="40dp"
         android:layout_marginRight="140dp"
         android:src="@drawable/sun1" />
@@ -23,15 +23,15 @@
         android:id="@+id/app_slogan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
+        android:layout_marginStart="40dp"
         android:layout_marginLeft="200dp"
         android:layout_marginTop="149dp"
         android:layout_marginEnd="50dp"
         android:layout_marginRight="155dp"
         android:gravity="center_horizontal"
-        android:text="Catch me if you can"
+        android:text="Welcome"
         android:textAlignment="center"
-        android:textColor="@color/Black"
+        android:textColor="@color/White"
         android:textSize="30dp"
         android:textStyle="bold|italic" />
 

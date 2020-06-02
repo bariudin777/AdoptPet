@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.getpet.Model.AnimalList;
 import com.example.getpet.Model.Animals;
 import com.example.getpet.Prevalent.Prevalent;
 import com.example.getpet.ViewHolder.AnimalViewHolder;
@@ -61,8 +62,14 @@ public class HomeActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+
+            Intent intent = new Intent(HomeActivity.this, AdoptionListActivity.class);
+            startActivity(intent);
+
+
+
+//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+//                        .setAction("Action", null).show();
             }
         });
 
@@ -96,7 +103,8 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onDestinationChanged(@NonNull NavController controller, @NonNull NavDestination destination, @Nullable Bundle arguments) {
                 if (destination.getId() == R.id.nav_cart) {
-                    Toast.makeText(HomeActivity.this, "Home", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(HomeActivity.this, AdoptionListActivity.class);
+                    startActivity(intent);
                 }
                 if (destination.getId() == R.id.nav_orders) {
                     Toast.makeText(HomeActivity.this, "Orders", Toast.LENGTH_SHORT).show();
