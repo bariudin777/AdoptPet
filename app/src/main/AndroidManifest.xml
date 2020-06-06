@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.getpet">
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
 
     <application
         android:allowBackup="true"
@@ -9,7 +13,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AdoptionListActivity"></activity>
+
+
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="@string/map_key"></meta-data>
+        <activity android:name=".Maps.MapLocationActivity"></activity>
+        <activity android:name=".SendMailActivity" />
+        <activity android:name=".AdoptionListActivity" />
         <activity android:name=".AnimalDetailsActivity" />
         <activity android:name=".SettingsActivity" />
         <activity
@@ -32,6 +41,7 @@
             android:theme="@style/Base.Theme.AppCompat" />
     </application>
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 

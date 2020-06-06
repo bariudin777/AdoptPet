@@ -15,6 +15,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.getpet.Maps.MapLocationActivity;
 import com.example.getpet.Model.AnimalList;
 import com.example.getpet.Prevalent.Prevalent;
 import com.example.getpet.ViewHolder.AnimalListHolder;
@@ -46,7 +47,7 @@ public class AdoptionListActivity extends AppCompatActivity {
         next_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AdoptionListActivity.this, HomeActivity.class);
+                Intent intent = new Intent(AdoptionListActivity.this, SendMailActivity.class);
                 startActivity(intent);
             }
         });
@@ -75,11 +76,12 @@ public class AdoptionListActivity extends AppCompatActivity {
                                 // here i will create a dialog box for removing animal from the adoption list
 
                                 CharSequence options[] = new CharSequence[]{
-                                        "Remove Animal From List"
+                                        "Remove Animal From List",
+                                        "Locate Shelter"
                                 };
 
                                 AlertDialog.Builder builder = new AlertDialog.Builder(AdoptionListActivity.this);
-                                builder.setTitle("Animal List - Delete: ");
+                                builder.setTitle("Animal List Options: ");
 
                                 builder.setItems(options, new DialogInterface.OnClickListener() {
                                     @Override
@@ -90,13 +92,22 @@ public class AdoptionListActivity extends AppCompatActivity {
                                                     .addOnCompleteListener(new OnCompleteListener<Void>() {
                                                         @Override
                                                         public void onComplete(@NonNull Task<Void> task) {
-                                                            if(task.isSuccessful()){
-                                                                Toast.makeText(AdoptionListActivity.this,"Animal is removed from list",Toast.LENGTH_SHORT).show();
-                                                                Intent intent = new Intent(AdoptionListActivity.this,HomeActivity.class);
+                                                            if (task.isSuccessful()) {
+                                                                Toast.makeText(AdoptionListActivity.this, "Animal is removed from list", Toast.LENGTH_SHORT).show();
+                                                                Intent intent = new Intent(AdoptionListActivity.this, HomeActivity.class);
                                                                 startActivity(intent);
                                                             }
                                                         }
                                                     });
+
+                                        }
+                                        if (which == 1) {
+                                            Intent intent = new Intent(AdoptionListActivity.this, MapLocationActivity.class);
+                                            String loc = "32.081484, 34.801490";
+                                            //here i need to create location class that retrieve shelter location
+                                            intent.putExtra("location", loc);
+                                            startActivity(intent);
+
 
                                         }
 
