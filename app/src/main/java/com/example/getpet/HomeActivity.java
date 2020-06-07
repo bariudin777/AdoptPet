@@ -80,7 +80,7 @@ public class HomeActivity extends AppCompatActivity {
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow, R.id.nav_logout, R.id.nav_cart,
-                R.id.nav_categories, R.id.nav_settings, R.id.nav_orders)
+                R.id.nav_categories, R.id.nav_settings, R.id.nav_search)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
@@ -106,8 +106,10 @@ public class HomeActivity extends AppCompatActivity {
                     Intent intent = new Intent(HomeActivity.this, AdoptionListActivity.class);
                     startActivity(intent);
                 }
-                if (destination.getId() == R.id.nav_orders) {
-                    Toast.makeText(HomeActivity.this, "Orders", Toast.LENGTH_SHORT).show();
+                if (destination.getId() == R.id.nav_search) {
+                    Intent intent = new Intent(HomeActivity.this, SearchAnimalActivity.class);
+                    startActivity(intent);
+                    Toast.makeText(HomeActivity.this, "Categories", Toast.LENGTH_SHORT).show();
                 }
                 if (destination.getId() == R.id.nav_categories) {
                     Toast.makeText(HomeActivity.this, "Categories", Toast.LENGTH_SHORT).show();

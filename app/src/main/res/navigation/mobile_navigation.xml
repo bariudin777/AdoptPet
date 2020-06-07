@@ -56,9 +56,9 @@
         android:label="@string/menu_settings"
         tools:layout="@layout/fragment_settings" />
     <fragment
-        android:id="@+id/nav_orders"
+        android:id="@+id/nav_search"
         android:name="com.example.getpet.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_orders"
+        android:label="@string/menu_search"
         tools:layout="@layout/fragment_orders" />
     <fragment
         android:id="@+id/nav_categories"
