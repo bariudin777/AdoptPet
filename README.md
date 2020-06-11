@@ -1,4 +1,4 @@
-# Android Application - "GetPet"
+# Android Application - "AdoptPet"
 
 General:
 GetPet application is an animal adoption android application uses AndroidStudio and Firebase.
