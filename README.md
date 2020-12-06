@@ -35,5 +35,3 @@ like change of your profile image, phone number, name at cetra.
 
 ![main window](rsz_settings.jpg)
 
-
-....here i will add the rest of pics....
